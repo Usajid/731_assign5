@@ -31,7 +31,7 @@ I used the given **Forecasts for Product Demand** dataset (https://www.kaggle.co
 </ul>
 
 ### Discussion and Results:
-The given dataset, once loaded into the dataframe was as follows:
+The given dataset, once loaded into the dataframe, was as follows:
 
 
 ![](figs/fig0u.png)
