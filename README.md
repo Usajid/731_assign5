@@ -46,7 +46,7 @@ Since forecasting depends quite heavily on the date feature, so to make sure tha
 
 Before proceeding to the time forecast modeling, first analyze or seek some trends in the data. So, we first analyze the **Product # 1359 demand** based on some time unit resolution e.g. **Year, Week, Month, Day**. In other words, we want to see when the **demand (trend) for Product # 1359** is higher and at which time the demand is lower and so on. So for that purpose, first we break the Date/Time field into *new features (Year, Month, Week, Day)*. Following are presented three such analysis:
 
-**1. Time Based Analysis on Demand Trend # 01 : Day-of-Week **
+**1. Time Based Analysis on Demand Trend # 01 : Day-of-Week**
 
 
 ![](figs/fig3u.png)
