@@ -33,38 +33,12 @@ I used the given **Forecasts for Product Demand** dataset (https://www.kaggle.co
 ### Discussion and Results:
 According to the given dataset we are using, there are **three anomalies** in it. We have to detect these anomalies using some Machine Learning Algorithm suitable for this problem. First we analyze the dataset and anomalies by making a time plot as follows:
 
-![Given Dataset Over Time Graph](figs/fig1u.png)
-
-
-As shown above, we can see three anomalies. The left-most anomaly is easy to detect, but next two anomalies are much closer to the normal data points. So, this makes it a challenging task for us. Next, to analyze the change in value over time for different data points, we plot the value change per datapoint over time as follows:
-
-![Change in Value Over Time Graph](figs/fig2au.png)
-
-As shown in the above graph, we can now clearly see that three anomalies have the highest peaks or changes as compared to other data points. It makes it more clearer to us. Now we can focus on these anomalous data points and model algortihms for their detection. We use this information in our modeling process as detailed in the notebook. Before starting the modeling process, we also analyze the Exponentially Weighted Moving Averages (EMWA) that are helpful in smoothing the graph as follows. But we skip them being not much useful.
-
-
-![EMWA Over Time Graph](figs/fig2u.png)
-
-
-For modeling the Anomaly Detection problem, we trained and evaluated following two algorithms:
-
-
-<ul>
-<li>One Class SVM</li>
-<li>Isolation Forest Model</li>
-</ul>
-
-Their training process has been given in the notebook. Once they have been modeled separately, their evaluation results for anomaly detection are given in the following two graphs:
-
-![Once Class SVM based Anomaly Detection Graph](figs/fig3u.png)
-
-
-
-
-![Isolation Forest based Anomaly Detection Graph](figs/fig4u.png)
-
-
-As it can be seen from the above two graphs, One class SVM is quite efficient but not very accurate relatively, as it also labels other normal data points incorrectly as anomalous. On the other hand, Isolation Forest model is comparatively more accurate and effective, but lesser efficient with more computational time.
+![](figs/fig1u.png)
+![](figs/fig2u.png)
+![](figs/fig3u.png)
+![](figs/fig4u.png)
+![](figs/fig5u.png)
+![](figs/fig6u.png)
 
 
 
