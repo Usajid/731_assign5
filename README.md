@@ -20,14 +20,14 @@ If you are interested in only looking at notebook, please access the notebook in
 
 ### Dataset:
 
-I used the **Machine Temperature System Failure** dataset (https://github.com/numenta/NAB/tree/master/data) for this Anomaly Detection modeling assignment. (Data csv file is in /data/machine_temperature_system_failure.csv).
+I used the given **Forecasts for Product Demand** dataset (https://www.kaggle.com/felixzhao/productdemandforecasting) for this Demand Forecasting modeling assignment. (Data csv file is in /data/historical_product_demand.csv).
 
 ### Process:
 
 <ul>
-<li>First I did feature engineering. Please refer to notebook for more details.</li>
-<li>Then, I did change in value over time graphical analysis and EMWA graphical analysis on the given dataset.</li>
-<li>Finally, we trained and evaluated two anomaly detection based models separately on the given dataset to detect anomalies.</li>
+<li>First, I loaded the given csv file into the Pandas Dataframe.</li>
+<li>Then, I did feature engineering and also three time based analysis to get some insights about the given dataset. Please refer to notebook for more details.These three analysis are also given below and are Weekly based, Monthly based and Years Weeks based trends.</li>
+<li>Finally, we trained and evaluated (forecasted) using the statistics-based ARIMA (Auto Regressive Integrated Moving Average) model to forecast the product demand.</li>
 </ul>
 
 ### Discussion and Results:
