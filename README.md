@@ -4,18 +4,18 @@ World Wide Products Inc. (Assignment # 05- EECS 731)
 
 
 ### Quick Note:
-If you are interested in only looking at notebook, please access the notebook in **/notebooks/anomalyDetection.ipynb**.
+If you are interested in only looking at notebook, please access the notebook in **/notebooks/time_series_forecasting.ipynb**.
 
 /notebooks: Contains the notebook of this assignment.
 
-/data: Contains the data csv file (machine_temperature_system_failure.csv)
+/data: Contains the data csv file (historical_product_demand.csv)
 
 ### Objective:
 
 <ul>
-<li>Pick one dataset from given Anomaly Detection Benchmarks</li>
-<li>Do feature engineering as a pre-process for Anomaly Detection</li>
-<li>Do Anomaly Detection based modeling to detect anomalies in the given dataset</li>
+<li>Load the given Time series dataset for different products demand information in a Pandas Dataframe</li>
+<li>Do feature engineering to analyze the dataset and add value to it in terms of valuable insights</li>
+<li>Design the forecasting model to determine the demand for a particular product using the other columns as features</li>
 </ul>
 
 ### Dataset:
