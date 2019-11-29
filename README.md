@@ -31,7 +31,14 @@ I used the given **Forecasts for Product Demand** dataset (https://www.kaggle.co
 </ul>
 
 ### Discussion and Results:
-According to the given dataset we are using, there are **three anomalies** in it. We have to detect these anomalies using some Machine Learning Algorithm suitable for this problem. First we analyze the dataset and anomalies by making a time plot as follows:
+The given ataset, once loaded into the dataframe was as follows:
+
+	Product_Code	Warehouse	Product_Category	Date	Order_Demand
+0	Product_0993	Whse_J	Category_028	2012-07-27	100
+1	Product_0979	Whse_J	Category_028	2012-01-19	500
+2	Product_0979	Whse_J	Category_028	2012-02-03	500
+3	Product_0979	Whse_J	Category_028	2012-02-09	500
+4	Product_0979	Whse_J	Category_028	2012-03-02	500
 
 ![](figs/fig1u.png)
 ![](figs/fig2u.png)
