@@ -36,6 +36,8 @@ The given dataset, once loaded into the dataframe was as follows:
 
 ![](figs/fig0u.png)
 
+Although we have **2,160** unique products, but to simplify the process, we limit the scope of our forecasting problem by focusing on one **most in-demand top product**. Once we get reasonable forecasting results on it, then we can repeat this process for other products in the given dataset. As from our analysis given in the notebook, we observed that the product **Product_1359** is the top product, so we do forecasting on it. Product # 1359 demand over time graph is as follows:
+
 ![](figs/fig1u.png)
 
 
