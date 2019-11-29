@@ -40,18 +40,32 @@ Although we have **2,160** unique products, but to simplify the process, we limi
 
 ![](figs/fig1u.png)
 
+Since forecasting depends quite heavily on the date feature, so to make sure that all the dates are unique with no duplicates, we grouped the same date values using sum aggregation. So, if product 1359 has 5 rows, all for the same date, then the Order_Demand feature value will be summed up, and 5 rows will be shrunk into just one row entry in the data frame. Then, we again plot and this time it looks more real world and practical for all date index values, as shown in the graph below.
 
 ![](figs/fig2u.png)
 
+Before proceeding to the time forecast modeling, first analyze or seek some trends in the data. So, we first analyze the **Product # 1359 demand** based on some time unit resolution e.g. **Year, Week, Month, Day**. In other words, we want to see when the **demand (trend) for Product # 1359** is higher and at which time the demand is lower and so on. So for that purpose, first we break the Date/Time field into *new features (Year, Month, Week, Day)*. Folowing are presented three such analysis:
+
+1. **Time Based Analysis on Demand Trend # 01 : Day-of-Week **
+
+
 ![](figs/fig3u.png)
+
+2. **Time Based Analysis on Demand Trend # 02 :  Month-of-Year**
 
 ![](figs/fig4u.png)
 
+3. **Time Based Analysis on Demand Trend # 03 :  Week-of-Year**
+
 ![](figs/fig5u.png)
+
+From above three time based analysis, we get some interesting trends from the given data, as detailed in our notebook. This can help us in getting valuable insights about this data.
+
+Finally, we modeled our demand forecasting problem for Product # 1359. We used the statistics time-series based **ARIMA** (Auto Regressive Integrated Moving Average) model for our demand forecasting problem. Results are as follows:
 
 ![](figs/fig6u.png)
 
-
+The ARIMA model, trained on the (blue bars) data, gives reasonable results (Red bars) as compared to the test data points (Green points), as shown in the above time-series demand forecasting graph. Using the similar approach, we can forecast the demand for other products as well.
 
 ### Conclusion
 
